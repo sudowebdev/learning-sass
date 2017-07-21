@@ -37,7 +37,7 @@ Variables are defined using the **$** symbol.
 
 	$primaryColor: blue;
 
-##### Please Note: All the respective codes are placed in the respective files. For instance: the code that relates to variables is put inside variables.scss.	
+##### Please Note: All the respective codes are placed in the respective files. For instance: the code that relates to variables is put inside styles/variables/variables.scss.	
 
 
 ### Scope of variables
