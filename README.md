@@ -25,5 +25,18 @@ I'll be using **Koala** (see inside the Applications tab), since I want to keep 
 Without any further ado, lets get our hands dirty.
 
 &nbsp;
-# SASS/SCSS guide
+# SASS/SCSS guide 
+
+## Variables
+
+Yup, variables. **SCSS brings variables to CSS**.  
+
+Acceptable values for variables include numbers, strings, colors, null, lists and maps.  
+
+Variables are defined using the **$** symbol.
+
+	$primaryColor: blue;
+
+
+
 
