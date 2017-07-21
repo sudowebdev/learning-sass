@@ -261,7 +261,50 @@ We can import a .scss file using the **@import** directive:
 
 In fact, you **don't** even really need the extension:
 
-	@import "grids";	
+	@import "grids";
 
 
+## Partials
 
+Sass also include a concept called **partials**. If you **prefix** a .sass or .scss file with an **underscore**, it will **not get compiled to CSS**. This is helpful if your file **only exists to get imported into a master style.scss and not explicitly compiled**.
+
+
+For Example:
+
+***_variable.scss*** 
+
+	$primary: #000;
+
+&nbsp;	
+***_header.scss***
+
+	header {
+		color:$primary;
+	}
+
+&nbsp;
+***_footer.scss***
+
+	footer {
+		background:$primary;
+	}
+
+&nbsp;
+***custom.scss***:
+
+	@import "_variable.scss";
+	@import "_header.scss";
+	@import "_footer.scss";
+
+&nbsp;
+***custom.css***
+
+	header {
+	  color: #000; 
+	}
+
+	footer {
+	  background: #000; 
+	}
+
+&nbsp;
