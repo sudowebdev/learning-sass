@@ -193,3 +193,49 @@ Sass also gives us a way to reference the parent in case of nesting.
 	    }
 	}
 
+### De-nesting (@at-root directive)
+
+Sass also helps us in de-nesting if we want to. So, if we have written something like this: 
+
+	
+	.first-component {
+	    .text { font-size: 1.4rem; }
+	    .button { font-size: 1.7rem; }
+	    .second-component {
+	        .text { font-size: 1.2rem; }
+	        .button { font-size: 1.4rem; }
+	    }
+	}
+
+After sometime, if we want to de-nest .second-component, we can use **@at-root**: 
+
+	.first-component {
+	    .text { font-size: 1.4rem; }
+	    .button { font-size: 1.7rem; }
+	    @at-root .second-component {
+	        .text { font-size: 1.2rem; }
+	        .button { font-size: 1.4rem; }
+	    }
+	}   
+
+
+	/*
+
+	generated CSS looks like this
+
+	.first-component .text {
+	  font-size: 1.4rem;
+	}
+	.first-component .button {
+	  font-size: 1.7rem;
+	}
+	.second-component .text {
+	  font-size: 1.2rem;
+	}
+	.second-component .button {
+	  font-size: 1.4rem;
+	}
+
+	*/
+
+
