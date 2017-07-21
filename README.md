@@ -139,3 +139,10 @@ The above example won't work. Instead, for this particular example you could use
 	.col-4 {
 	  width: $container-width / 4;
 	}
+
+
+## Functions
+
+The coolest part about Sass is its built-in functions. The full list can be explored here -> **[Functions in Sass/Scss](http://sass-lang.com/documentation/Sass/Script/Functions.html)**
+
+ 
