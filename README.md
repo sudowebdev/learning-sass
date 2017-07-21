@@ -176,3 +176,20 @@ But in **Sass/Scss** we can get the **same result** by writing:
 	}
 
 Which one sounds more **intuitionistic**? You got the answer!
+
+
+### Reference the Parent (& operator)
+
+Sass also gives us a way to reference the parent in case of nesting.
+
+		
+	a.myAnchor {
+	    color: blue;
+	    &:hover {
+	        text-decoration: underline;
+	    }
+	    &:visited {
+	        color: purple;
+	    }
+	}
+
