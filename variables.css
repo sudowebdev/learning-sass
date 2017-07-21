@@ -1,10 +1,13 @@
-.div {
-  background-color: blue; }
-
 body {
   background-color: green; }
 
 p {
+  color: blue; }
+
+div {
+  background-color: blue; }
+
+span {
   color: blue; }
 
 /*# sourceMappingURL=variables.css.map */

@@ -59,6 +59,19 @@ Check this one out:
 
 Compile this and check the **color** property of **p selector**.
 
+### !global flag 
+
+But wait!  
+What if we want to set a variable **global from within a declaration**. In that case, we have to use **!global** flag.  
 
 
+	$secondaryColor: green;
 
+	div {
+		$secondaryColor: blue !global;
+		background-color: $primaryColor;
+	}
+
+	span {
+		color: $primaryColor;
+	}

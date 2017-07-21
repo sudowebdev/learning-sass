@@ -1,15 +1,23 @@
 $primaryColor: blue;
 
-.div {
-    background-color: $primaryColor;
-}
-
 body {
 	$primaryColor: green;
 	background-color: $primaryColor;
 }
 
 p {
+	color: $primaryColor;
+}
+
+
+$secondaryColor: green;
+
+div {
+	$secondaryColor: blue !global;
+	background-color: $primaryColor;
+}
+
+span {
 	color: $primaryColor;
 }
 
