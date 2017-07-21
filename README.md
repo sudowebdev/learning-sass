@@ -145,4 +145,34 @@ The above example won't work. Instead, for this particular example you could use
 
 The coolest part about Sass is its built-in functions. The full list can be explored here -> **[Functions in Sass/Scss](http://sass-lang.com/documentation/Sass/Script/Functions.html)**
 
- 
+
+## Nesting
+
+Now, Sass also provides us with the feature of **nesting declarations**. What that means is that now we can have a **declaration inside of another declaration**.  
+
+Makes sense?  
+**Let's switch back to code!**  
+
+In **CSS**, we can **perform nesting** like this: 
+
+	
+	.container {
+	    width: 100%;
+	}
+
+	.container h1 {
+	    color: red;
+	}
+
+
+But in **Sass/Scss** we can get the **same result** by writing:
+
+	
+	.container {
+	    width: 100%;
+	    h1 {
+	        color: red;
+	    }
+	}
+
+Which one sounds more **intuitionistic**? You got the answer!
