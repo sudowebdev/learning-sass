@@ -92,3 +92,50 @@ This flag is used for providing a default value for a variable. If a value is pr
 
 	// body font size = 62.5%
 
+
+## Math
+
+Sass allows us to use **mathematical expressions**. This can be super useful in case of **assigning dimensions to selectors that are dependent on dimensions used by other selectors**.
+
+
+Supported operators include:
+	
+**+** 	Addition  
+**-** 	Subtraction  
+**/** 	Division  
+***** 	Multiplication  
+**%** 	Modulo  
+**==** 	Equality  
+**!=** 	Inequality 
+
+
+There are 2 cases which you have to keep in mind before using Math expressions in your Sass files. These are: 
+
+<ul>
+
+<li> First, because the **/** symbol is used in shorthand CSS font properties like font: 14px/16px, if you want to use the division operator on non-variable values, you need to wrap them in parentheses like: 
+
+	$fontDiff: (14px/16px);
+
+</li>
+
+<li> Second, you can't mix value units:
+
+	$container-width: 100% - 20px; //error
+
+</li>
+
+The above example won't work. Instead, for this particular example you could use the css calc function, as it needs to be interpereted at render time.
+
+</ul> 
+
+
+	$container-width: 100%;
+
+	.container {
+	  width: $container-width;
+	}
+
+	.col-4 {
+	  width: $container-width / 4;
+	}
