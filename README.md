@@ -239,3 +239,12 @@ After sometime, if we want to de-nest .second-component, we can use **@at-root**
 	*/
 
 
+### Some more info on Nesting
+
+**Already loving it**? Well, nests are a really great way to **save some time** and **make your styles readable** but over-nesting can cause **problems** with overselection and filesize.  
+
+So, the **rule of thumb** is to: 
+>Always look at what your Sass/Scss compiles to and try to follow the "inception rule"
+
+##### Inception Rule
+>Don’t go more than four levels deep.
