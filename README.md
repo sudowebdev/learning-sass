@@ -248,3 +248,20 @@ So, the **rule of thumb** is to:
 
 ##### Inception Rule
 >Don’t go more than four levels deep.
+
+
+## Imports
+
+**Imports** allow you to **break your styles** into **separate files** and **import** them into one another.   
+
+
+We can import a .scss file using the **@import** directive:
+
+	@import "grids.scss";
+
+In fact, you **don't** even really need the extension:
+
+	@import "grids";	
+
+
+
