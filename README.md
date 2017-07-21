@@ -100,13 +100,13 @@ Sass allows us to use **mathematical expressions**. This can be super useful in 
 
 Supported operators include:
 	
-**+** 	Addition  
-**-** 	Subtraction  
-**/** 	Division  
-***** 	Multiplication  
-**%** 	Modulo  
-**==** 	Equality  
-**!=** 	Inequality 
+**"+"** 	Addition  
+**"-"** 	Subtraction  
+**"/"** 	Division  
+**"*"** 	Multiplication  
+**"%"** 	Modulo  
+**"=="** 	Equality  
+**"!="** 	Inequality 
 
 
 There are 2 cases which you have to keep in mind before using Math expressions in your Sass files. These are: 
