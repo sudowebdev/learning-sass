@@ -75,3 +75,20 @@ What if we want to set a variable **global from within a declaration**. In that 
 	span {
 		color: $primaryColor;
 	}
+
+
+### !default flag
+
+This flag is used for providing a default value for a variable. If a value is provided, it is overwritten:
+
+	
+	$firstValue: 62.5%;
+
+	$firstValue: 24px !default;
+
+	body {
+		font-size: $firstValue;
+	}
+
+	// body font size = 62.5%
+

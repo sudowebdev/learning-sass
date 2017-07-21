@@ -10,6 +10,7 @@ p {
 }
 
 
+
 $secondaryColor: green;
 
 div {
@@ -21,3 +22,12 @@ span {
 	color: $primaryColor;
 }
 
+
+
+$firstValue: 62.5%;
+
+$firstValue: 24px !default;
+
+body {
+	font-size: $firstValue;
+}
