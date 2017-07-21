@@ -1,0 +1,14 @@
+%icon {
+  transition: background-color ease .2s;
+  margin: 0 .5em;
+}
+
+.error-icon {
+  @extend %icon;
+  /* error specific styles... */
+}
+
+.info-icon {
+  @extend %icon;
+  /* info specific styles... */
+}

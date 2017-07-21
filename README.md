@@ -349,4 +349,86 @@ In Sass, the **@extend** directive is an outstanding way to **inherit** already 
 	}
 
 
+## Placeholders
+
+The **@extend** directive allows us to easily **share** styles between selectors. This is best illustrated with an example:  
+
+***.scss***
+
+	.icon {
+	  transition: background-color ease .2s;
+	  margin: 0 .5em;
+	}
+
+	.error-icon {
+	  @extend .icon;
+	  /* error specific styles... */
+	}
+
+	.info-icon {
+	  @extend .icon;
+	  /* info specific styles... */
+	}
+
+
+***.css*** (generated css file)
 	
+	.icon, .error-icon, .info-icon {
+	  transition: background-color ease .2s;
+	  margin: 0 .5em;
+	}
+
+	.error-icon {
+	  /* error specific styles... */
+	}
+
+	.info-icon {
+	  /* info specific styles... */
+	}	
+
+
+Now here comes the interesting part. What if we **never use the icon class** in our markup and its **only purpose is to be there to extend**?  
+
+The resulting CSS will be **slightly larger** than it really needs to be because we'll have a style that **will never be used**. We can get around this with **placeholder selectors**.
+
+
+### Placeholder selectors
+
+They are very **similar to class selectors**, but instead of using a period (.) at the start, the **percent character (%)** is used.  
+
+##### Placeholder selectors have the additional property that they will not show up in the generated CSS, only the selectors that extend them will be included in the output. 
+
+
+***.scss***
+
+	%icon {
+	  transition: background-color ease .2s;
+	  margin: 0 .5em;
+	}
+
+	.error-icon {
+	  @extend %icon;
+	  /* error specific styles... */
+	}
+
+	.info-icon {
+	  @extend %icon;
+	  /* info specific styles... */
+	}
+
+
+***.css*** (generated css file)
+
+	.error-icon, .info-icon {
+	  transition: background-color ease .2s;
+	  margin: 0 .5em;
+	}
+
+	.error-icon {
+	  /* error specific styles... */
+	}
+
+	.info-icon {
+	  /* info specific styles... */
+	}
+
