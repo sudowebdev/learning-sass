@@ -308,3 +308,45 @@ For Example:
 	}
 
 &nbsp;
+
+
+## Extends
+
+In Sass, the **@extend** directive is an outstanding way to **inherit** already existing styles.
+
+***extends.scss***
+
+	.input {
+	  border-radius: 3px;
+	  border: 4px solid #ddd;
+	  color: #555;
+	  font-size: 17px;
+	  padding: 10px 20px;
+	  display: inline-block;
+	  outline: 0;
+	}
+
+	.error-input {
+	  @extend .input;
+	  border:4px solid #e74c3c;
+	}
+
+
+***extends.css***
+
+	.input, .error-input {
+		border-radius: 3px;
+		border: 4px solid #ddd;
+		color: #555;
+		font-size: 17px;
+		padding: 10px 20px;
+		display: inline-block;
+		outline: 0; 
+	}
+
+	.error-input {
+		border: 4px solid #e74c3c; 
+	}
+
+
+	
