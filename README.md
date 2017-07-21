@@ -13,4 +13,13 @@ Some folks didn't like the variation in syntax. So, SCSS came into sight which h
 
 The difference can be summarised as:
 1. **SCSS (Sassy CSS)**: Uses the .scss file extension and is fully compliant with CSS syntax
-2. **Indented (simply called 'Sass')**: Uses .sass file extension and indentation rather than brackets; it is not fully compliant with CSS syntax, but it's quicker to write																																																																																																																																																																																											
+2. **Indented (simply called 'Sass')**: Uses .sass file extension and indentation rather than brackets; it is not fully compliant with CSS syntax, but it's quicker to write																	
+I'll be writing in SCSS syntax, because that is what I prefer.
+
+## Installation
+
+All the installation instructions are clearly written **[here](http://sass-lang.com/install)**.  
+I'll be using **Koala** (see inside the Applications tab), since I want to keep this tutorial **focused on learning SASS/SCSS** and not on their installation.
+
+
+Without any further ado, lets get our hands dirty.
