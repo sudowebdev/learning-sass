@@ -113,7 +113,7 @@ There are 2 cases which you have to keep in mind before using Math expressions i
 
 <ul>
 
-<li> First, because the **/** symbol is used in shorthand CSS font properties like font: 14px/16px, if you want to use the division operator on non-variable values, you need to wrap them in parentheses like: 
+<li> First, because the **/** symbol is used in shorthand CSS font properties like font: 14px/16px, if you want to use the division operator on non-variable values (Variable values are values which involve variables. For instance: $fontDiff = $font/15px), you need to wrap them in parentheses like: 
 
 	$fontDiff: (14px/16px);
 
