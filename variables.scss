@@ -1,6 +1,15 @@
 $primaryColor: blue;
 
 .div {
-  background-color: $primaryColor;
+    background-color: $primaryColor;
+}
+
+body {
+	$primaryColor: green;
+	background-color: $primaryColor;
+}
+
+p {
+	color: $primaryColor;
 }
 

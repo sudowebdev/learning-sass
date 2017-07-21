@@ -40,6 +40,25 @@ Variables are defined using the **$** symbol.
 ##### Please Note: All the respective codes are placed in the respective files. For instance: the code that relates to variables is put inside variables.scss.	
 
 
+### Scope of variables
+
+Now, just like variables defined in any other language, Sass variables also have scope. This means if you declare a variable within a selector, it is then scoped within that selector.
+
+Check this one out:  
+
+	$primaryColor: blue;
+
+	body {
+		$primaryColor: green;
+		background-color: $primaryColor;
+	}
+
+	p {
+		color: $primaryColor;
+	}
+
+Compile this and check the **color** property of **p selector**.
+
 
 
 
