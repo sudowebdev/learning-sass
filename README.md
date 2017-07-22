@@ -473,6 +473,8 @@ We'll now write a **border-radius mixin** and use it in our code. Follow along!
 
 
 
+
+
 	/*
 	generated output
 
@@ -491,4 +493,10 @@ We'll now write a **border-radius mixin** and use it in our code. Follow along!
 	*/	
 
 
+### Explaining the implementation
 
+The declaration begins with the **directive @mixin** and is followed by the name of the **mixin**. In this case **border-radius**.  
+The **name of the mixin** can contain any combination of **alpha and numeric characters without spaces**.   
+Then comes the **list of arguments** that the mixin accepts enclosed in **parentheses ( ... )**.  
+Next comes the **definition of the mixin** enclosed in braces { ... }. The definition of the mixin can contain **any combination** of CSS attributes. You can even declare additional rules (with selectors) that will be mixed into your CSS along with the attributes.  
+Lastly, the mixins are **used** with the **@include directive** followed by the **name** of the mixin with **respective arguments**. In this case that was ***@include border-radius(5px)***.  
