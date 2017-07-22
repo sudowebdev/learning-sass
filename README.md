@@ -629,3 +629,9 @@ Now, this can be used by:
 	  margin: 0 $margin;
 	}
 
+## Resources
+
+
+1. **[scotch.io](https://scotch.io/tutorials/getting-started-with-sass)**
+2. **[The Sass Way](http://thesassway.com)**
+
