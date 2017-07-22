@@ -491,15 +491,15 @@ We'll now write a **border-radius mixin** and use it in our code. Follow along!
 
 ### Explaining the implementation
 <ul>
-<li>The declaration begins with the **directive @mixin** and is followed by the name of the **mixin**. In this case **border-radius**. </li> 
+<li>The declaration begins with the directive @mixin and is followed by the name of the mixin. In this case border-radius. </li> 
 
-<li>The **name of the mixin** can contain any combination of **alpha and numeric characters without spaces**. </li> 
+<li>The name of the mixin can contain any combination of alpha and numeric characters without spaces. </li> 
 
-<li>Then comes the **list of arguments** that the mixin accepts enclosed in **parentheses ( ... )**. </li> 
+<li>Then comes the list of arguments that the mixin accepts enclosed in parentheses ( ... ). </li> 
 
-<li>Next comes the **definition of the mixin** enclosed in braces { ... }. The definition of the mixin can contain **any combination** of CSS attributes. You can even declare additional rules (with selectors) that will be mixed into your CSS along with the attributes. </li>   
+<li>Next comes the definition of the mixin enclosed in braces { ... }. The definition of the mixin can contain any combination of CSS attributes. You can even declare additional rules (with selectors) that will be mixed into your CSS along with the attributes. </li>   
 
-<li>Lastly, the mixins are **used** with the **@include directive** followed by the **name** of the mixin with **respective arguments**. In this case that was ***@include border-radius(5px)***. </li> 
+<li>Lastly, the mixins are used with the @include directive followed by the name of the mixin with respective arguments. In this case that was @include border-radius(5px). </li> 
 
 </ul>
 
@@ -529,3 +529,4 @@ Another way to provide a default value is to **declare a variable** beforehand a
 	@mixin border-radius($radius: $default-border-radius) {
 	 ...
 	}	
+
