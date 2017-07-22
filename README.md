@@ -599,8 +599,33 @@ The above point can be illustrated by the following example:
 	*/
 
 
+## Function Directives
+
+They are **similar to mixins** except they **return values** instead of **returning markups**.  
+
+Let's understand this by code: 
+
+	@function getColumnWidth($width, $columns, $margin){
+	    @return ($width / $columns) - ($margin * 2);
+	}
+
+Now, this can be used by:
 
 
+	$container-width: 100%;
+	$column-count: 4;
+	$margin: 1%;
 
+	.container {
+	  width: $container-width;
+	}
 
+	.column {
+	  background: #1abc9c;
+	  height: 200px;
+	  display: block;
+	  float: left;
+	  width: getColumnWidth($container-width,$column-count,$margin);
+	  margin: 0 $margin;
+	}
 
