@@ -553,3 +553,54 @@ This is much **simpler than calling** the mixin with each of the arguments witho
 With keyword arguments, you **don't even have to call out to the mixin with the arguments in the same order that they were declared**: 
 
 	@include border-radius($ms: false, $radius: 10px);	
+
+### Another Example of mixins
+
+
+	@mixin media($queryString){
+	    @media #{$queryString} {
+	      @content;
+	    }
+	}
+
+##### Please Note: The Sass interpolation syntax, #{}. When you put a variable in between the braces, it is printed rather than evaluated.  
+
+##### Another Note: Another piece of our puzzle is the @content directive. When you wrap a mixin around content using braces, the wrapped content becomes available via the @content directive.
+
+The above point can be illustrated by the following example:
+
+	
+	.container {
+	    width: 900px;
+	    @include media("(max-width: 767px)"){
+	    	/*
+	    	to use the styles inside this block, we have to use @content
+			otherwise the following error will pop up:
+			   Mixin "media" does not accept a content block.
+			*/
+	    	
+	  	     width: 100%;
+	    }
+	}
+	
+	/*
+
+	generated output
+
+	.container {
+	  width: 900px;
+	}
+	@media (max-width: 767px) {
+	  .container {
+	    width: 100%;
+	  }
+	}
+
+	*/
+
+
+
+
+
+
+
