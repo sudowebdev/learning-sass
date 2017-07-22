@@ -631,7 +631,18 @@ Now, this can be used by:
 
 ## Resources
 
-
 1. **[scotch.io](https://scotch.io/tutorials/getting-started-with-sass)**
 2. **[The Sass Way](http://thesassway.com)**
 
+
+## Bugs and Issues
+
+Have a bug or an issue? **[Open a new issue](https://github.com/sudowebdev/learning-sass/issues)** here on GitHub.
+
+## Author
+
+#### Nikhil Arora   
+
+Find me at:
+1. https://twitter.com/iamoperand
+2. https://github.com/iamoperand
