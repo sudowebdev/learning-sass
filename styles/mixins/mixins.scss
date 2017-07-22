@@ -1,0 +1,14 @@
+@mixin border-radius($radius) {
+	  -moz-border-radius: $radius;
+	  -webkit-border-radius: $radius;
+	  -ms-border-radius: $radius;
+	  border-radius: $radius;
+}
+
+
+a.button {
+	  background: black;
+	  color: white;
+	  padding: 10px 20px;
+	  @include border-radius(5px);
+}

@@ -1,0 +1,10 @@
+a.button {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=mixins.css.map */
