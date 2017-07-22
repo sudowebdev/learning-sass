@@ -447,5 +447,48 @@ If you've programmed before you could think of them as **functions, procedures, 
 **The macros are the ones which generate code at compile time!**
 
 
-This was all for theory. Let's now switch to code!	
+This was all for theory. Let's now switch to code!
+
+### Implementation 
+
+We'll now write a **border-radius mixin** and use it in our code. Follow along!  
+
+***.scss***
+
+	@mixin border-radius($radius) {
+	  -moz-border-radius: $radius;
+	  -webkit-border-radius: $radius;
+	  -ms-border-radius: $radius;
+	  border-radius: $radius;
+	}
+
+***.css***
+
+	a.button {
+	  background: black;
+	  color: white;
+	  padding: 10px 20px;
+	  @include border-radius(5px);
+	}
+
+
+
+	/*
+	generated output
+
+	a.button {
+	  background: black;
+	  color: white;
+	  padding: 10px 20px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	  -ms-border-radius: 5px;
+	  -o-border-radius: 5px;
+	  -khtml-border-radius: 5px;
+	  border-radius: 5px;
+	}
+	
+	*/	
+
+
 
