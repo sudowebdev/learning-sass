@@ -471,10 +471,6 @@ We'll now write a **border-radius mixin** and use it in our code. Follow along!
 	  @include border-radius(5px);
 	}
 
-
-
-
-
 	/*
 	generated output
 
@@ -494,15 +490,19 @@ We'll now write a **border-radius mixin** and use it in our code. Follow along!
 
 
 ### Explaining the implementation
+<ul>
+<li>The declaration begins with the **directive @mixin** and is followed by the name of the **mixin**. In this case **border-radius**. </li> 
 
-The declaration begins with the **directive @mixin** and is followed by the name of the **mixin**. In this case **border-radius**.  
-The **name of the mixin** can contain any combination of **alpha and numeric characters without spaces**.   
-Then comes the **list of arguments** that the mixin accepts enclosed in **parentheses ( ... )**.  
-Next comes the **definition of the mixin** enclosed in braces { ... }. The definition of the mixin can contain **any combination** of CSS attributes. You can even declare additional rules (with selectors) that will be mixed into your CSS along with the attributes.  
-Lastly, the mixins are **used** with the **@include directive** followed by the **name** of the mixin with **respective arguments**. In this case that was ***@include border-radius(5px)***.  
+<li>The **name of the mixin** can contain any combination of **alpha and numeric characters without spaces**. </li> 
 
+<li>Then comes the **list of arguments** that the mixin accepts enclosed in **parentheses ( ... )**. </li> 
+
+<li>Next comes the **definition of the mixin** enclosed in braces { ... }. The definition of the mixin can contain **any combination** of CSS attributes. You can even declare additional rules (with selectors) that will be mixed into your CSS along with the attributes. </li>   
+
+<li>Lastly, the mixins are **used** with the **@include directive** followed by the **name** of the mixin with **respective arguments**. In this case that was ***@include border-radius(5px)***. </li> 
+
+</ul>
 
 ### Compass-Project Intro
 This example lets us use **border-radius across all browsers**. There is a **project dedicated** to providing mixins just like that and much more. The name of the project is: **[Compass-Project](http://compass-style.org/)** and it is thought of as the **standard library for Sass**.  
 
-  
