@@ -432,3 +432,20 @@ They are very **similar to class selectors**, but instead of using a period (.) 
 	  /* info specific styles... */
 	}
 
+
+## Mixins
+
+Without question, one of the most powerful and valuable features of Sass is the **ability to package up existing code into reusable chunks of code** called ***mixins***.
+
+
+### Mixins are like Macros
+
+Mixins are the Sass **equivalent of macros** in other programming languages.  
+If you've programmed before you could think of them as **functions, procedures, or methods**, but they aren't technically any of these concepts because their function is to **generate code at compile time not execute code at run time**.  
+
+&nbsp;
+**The macros are the ones which generate code at compile time!**
+
+
+This was all for theory. Let's now switch to code!	
+
