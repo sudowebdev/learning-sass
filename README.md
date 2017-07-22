@@ -504,5 +504,28 @@ We'll now write a **border-radius mixin** and use it in our code. Follow along!
 </ul>
 
 ### Compass-Project Intro
-This example lets us use **border-radius across all browsers**. There is a **project dedicated** to providing mixins just like that and much more. The name of the project is: **[Compass-Project](http://compass-style.org/)** and it is thought of as the **standard library for Sass**.  
+This example lets us use **border-radius across all browsers**. There is a **project dedicated** to providing mixins just like that and much more. The name of the project is: **[Compass-Project](http://compass-style.org/)** and it is thought of as the **standard library for Sass**. 
 
+### Default arguments
+
+You can also add **default values to the arguments** that you pass into your mixin.  
+
+***.scss***
+
+	@mixin border-radius($radius: 5px) {
+	  ...
+	}
+
+This makes the $radius argument **optional**. So you can call the mixin without it like this:	
+
+	@include border-radius;
+
+Which would use the **default value i.e. 5px** for $radius.
+
+
+Another way to provide a default value is to **declare a variable** beforehand and **use that** as the default value for the mixin:  
+
+	$default-border-radius: 5px !default;
+	@mixin border-radius($radius: $default-border-radius) {
+	 ...
+	}	
