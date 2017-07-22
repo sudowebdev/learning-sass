@@ -530,3 +530,26 @@ Another way to provide a default value is to **declare a variable** beforehand a
 	 ...
 	}	
 
+## Keyword arguments
+
+Keyword arguments are especially useful when a mixin accepts **multiple arguments**. If the arguments are defaulted, you can **use the name** of the argument to set the **specific value** for an argument, **without passing** the values of the other arguments. 
+
+	@mixin border-radius($radius: 5px, $moz: true, $webkit: true, $ms: true) {
+		@if $moz    { -moz-border-radius:    $radius; }
+		@if $webkit { -webkit-border-radius: $radius; }
+		@if $ms     { -ms-border-radius:     $radius; }
+		border-radius: $radius;
+	}
+
+Since all of the arguments have default values, you could **turn off support for just Internet Explorer** by calling the mixin like this:
+
+
+	@include border-radius($ms: false);
+
+This is much **simpler than calling** the mixin with each of the arguments without names:
+
+	@include border-radius(5px, true, true, true);
+
+With keyword arguments, you **don't even have to call out to the mixin with the arguments in the same order that they were declared**: 
+
+	@include border-radius($ms: false, $radius: 10px);	
